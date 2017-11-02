@@ -16,3 +16,7 @@ This module is plug and play which means you only have to install it and it will
 ```bash
 composer require vulcandigital\silverstripe-hashupload
 ```
+
+## Caveat
+
+The default configuration for this module uses `Injector` to replace the standard `SilverStripe\Assets\Upload` class. Any other module doing the same may and most likely will cause a conflict. 
